@@ -8,9 +8,21 @@ const PORT = process.env.PORT || 8080;
 
 
 app.use(morgan('tiny'));
+app.use(express.urlencoded({
+    extended:false
+}));
+
+app.use(express.json());
+
+app.post('/contact', (req, res)=>{
+
+    console.log('Data:', req.body);
+    res.json({message: 'hello world'})
+});
 
 
-app.get('/api', (req, res)=>{
+
+app.get('/contact', (req, res)=>{
     const data = {
         name: 'HasanAdemuyiwa',
         age: 2
