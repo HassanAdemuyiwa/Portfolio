@@ -88,6 +88,11 @@ const menuItems = [
         listIcon: <ContactMail/>,
         listText: 'Contacts',
         listPath: '/contact'
+    },
+    {
+        listIcon: <ContactMail/>,
+        listText: 'Test',
+        listPath: '/test'
     }
 ]
 
