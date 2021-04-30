@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useState} from 'react';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 //import {useForm} from 'react-hook-form'
 import { Typography, Grid, Box, TextField, Button} from '@material-ui/core';
 import SendIcon from "@material-ui/icons/Send";
 import Navbar from './Navbar';
-import emailjs from 'emailjs-com'
+// import emailjs from 'emailjs-com'
 //import { FormControl } from '@material-ui/core';
-// import axios from 'axios';
+import axios from 'axios';
+import { Switch } from 'react-router';
 
 
 const useStyles = makeStyles(theme=>({
@@ -46,47 +47,48 @@ const InputField = withStyles({
 })(TextField);
 
 const Contact = () => {
-
     const classes = useStyles();
+    const [ fullName, setFullName] = useState('')
+    const [ email, setEmail] = useState('')
+    const [ subject, setSubject] = useState('')
+    const [ message, setMessage] = useState('')
 
 
-
-    // const { register, handleSubmit, errors} = useForm();
-
- 
-
-    // const onSubmit = (data) =>{
-    //    //e.preventDefault()
-    //         console.log(data)
-    //     // const formData = new FormData()
-        
-    //     // const res = await fetch('http:localhost:8080/contact',{
-    //     //     method: 'POST',
-    //     //     body: formData
-    //     // }).then(res => res.json())
-    //     // alert(JSON.stringify(res))
-         
-    // }
-    // const onClick = (mail) => {
-    //     console.log(mail);
-    // }
-
-    function sendEmail(e){
-
+    const handleChange=(e)=> {
         e.preventDefault();
-
-        emailjs.sendForm('gmail', 'template_t3nglb1', e.target, 'user_hQVwBCDaZvajvwbOg97KA')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-          e.target.reset()
-
-
+    switch(e.target.id){
+        case 'fullName':
+            setFullName(e.target.value);
+        break;
+        case 'email':
+            setEmail(e.target.value);
+        break;
+        case 'subject':
+            setSubject(e.target.value);
+        break;
+        case 'message':
+            setMessage(e.target.value);
+        break;
+    default:
+    break;
+    }
+   
     }
 
 
+    const handleSubmit=(e)=>{
+        e.preventDefault();
+        const dataToSubmit ={
+            fullName,
+            email,
+            subject,
+            message
+        }
+
+    axios.post('http://localhost:8080/contact',dataToSubmit, function(){ console.log('Server received data')} );
+
+
+    }
 
     return (
         <Box component='div' style={{background: '#233', height: '100vh'}}>
@@ -96,17 +98,17 @@ const Contact = () => {
                     <Typography variant="h5"   style={{color:'tomato', textAlign:'center', textTransform:'uppercase', fontSize:'18px'}}>
                         hire or contact me...
                     </Typography>
-                    <form onSubmit={sendEmail}>
+                    <form onSubmit={handleSubmit}>
                 
-                     <InputField fullWidth={true} name='fullName' label='Full Name' type='text'  variant='outlined' inputProps={{style:{color:"white", fontSize:'16px'}}} margin="dense" size="medium"/> <br />
+                     <InputField fullWidth={true} id='fullName' value={fullName} label='Full Name' type='text'  variant='outlined' inputProps={{style:{color:"white", fontSize:'16px'}}} margin="dense" size="medium" onChange={handleChange} /> <br />
 
-                    <InputField fullWidth={true} name='email' label='Email' type='email'  variant='outlined'inputProps={{style:{color:"white", fontSize:'16px'}}}   margin="dense" size="medium"/> <br />
+                    <InputField fullWidth={true} id='email' value={email} label='Email' type='email'  variant='outlined'inputProps={{style:{color:"white", fontSize:'16px'}}}   margin="dense" size="medium" onChange={handleChange} /> <br />
 
-                    <InputField fullWidth={true} name='subject' label='Subject' type='text' variant='outlined'inputProps={{style:{color:"white", fontSize:'16px'}}}   margin="dense" size="medium"/> <br />
+                    <InputField fullWidth={true} id='subject' value={subject} label='Subject' type='text' variant='outlined'inputProps={{style:{color:"white", fontSize:'16px'}}}   margin="dense" size="medium" onChange={handleChange} /> <br />
 
-                    <InputField fullWidth={true} rows={5} type='text' multiline name='message' label='Message' variant='outlined' inputProps={{style:{color:"white", fontSize:'16px'}}}  margin="dense" size="medium"/>
+                    <InputField fullWidth={true} rows={5} type='text' multiline id='message' value={message} label='Message' variant='outlined' inputProps={{style:{color:"white", fontSize:'16px'}}}  margin="dense" size="medium" onChange={handleChange} />
 
-                    <Button className={classes.button} variant='outlined' fullWidth={true} endIcon={<SendIcon/>} type='submit'>
+                    <Button className={classes.button} variant='outlined' fullWidth={true} endIcon={<SendIcon/>} type='submit' onClick={handleSubmit}>
                       contact me
                     </Button>
                     
