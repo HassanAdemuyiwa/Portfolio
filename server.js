@@ -15,7 +15,7 @@ app.use(cookieParser());
 
 app.post('/contact', (req, res)=>{
 
-    console.log(req.body);
+    console.log('Data:', req.body);
     res.json({message: 'Message received!!!'})
 });
 

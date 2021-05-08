@@ -118,20 +118,20 @@ const Resume = () => {
             <div className={classes.toolbarMargin}/>
            <Navbar/>
            <Box component='header' className={classes.mainContainer}>
-               <Typography variant='h4' align='center' className={classes.heading}> Workig Experience</Typography>
+               <Typography variant='h4' align='center' className={classes.heading}> EDUCATION</Typography>
               
             <Box component='div' className={classes.timeLine}>
-                <Typography variant='h2' className={ `${classes.timeLineYear} ${classes.timeLineItem}`}>  2013
+                <Typography variant='h2' className={ `${classes.timeLineYear} ${classes.timeLineItem}`}>  2020
                 </Typography>
                 <Box component="div" className={classes.timeLineItem}>
                     <Typography variant='h5' align='center' className={classes.subHeading}>
-                        web design
+                        National Diploma (ND)
                     </Typography>
                     <Typography variant='body1'  style={{color: 'tomato'}}>
-                       Compnay name where your Worked
+                       Yaba College of Technology, Yaba 
                     </Typography>   
                     <Typography variant='subtitle1'  style={{color: 'tan'}}>
-                       Mollit elit nulla veniam minim cupidatat adipisicing reprehenderit aute non nulla. Incididunt laborum enim anim aliquip sunt nisi duis et nulla. In esse est enim dolore tempor qui deserunt quis esse. Incididunt adipisicing fugiat minim aliquip laborum ad. Fugiat fugiat aliqua proident cupidatat id laboris velit.
+                      Ordinary National Diploma in Computer Science, Yaba College of Technology, Yaba, Lagos.
                     </Typography>
                 </Box>
                 
@@ -139,28 +139,28 @@ const Resume = () => {
                 </Typography>
                 <Box component="div" className={classes.timeLineItem}>
                     <Typography variant='h5' align='center' className={classes.subHeading}>
-                       html & css
+                        Senior Secondary School Certificate Examination (SSCE)
                     </Typography>
                     <Typography variant='body1'  style={{color: 'tomato'}}>
-                       Compnay name where your Worked
+                       Adenrele High School, Ifo
                     </Typography>   
                     <Typography variant='subtitle1'  style={{color: 'tan'}}>
-                       Mollit elit nulla veniam minim cupidatat adipisicing reprehenderit aute non nulla. Incididunt laborum enim anim aliquip sunt nisi duis et nulla. In esse est enim dolore tempor qui deserunt quis esse. Incididunt adipisicing fugiat minim aliquip laborum ad. Fugiat fugiat aliqua proident cupidatat id laboris velit.
+                       Senior Secondary School Certificate Exam (SSCE), Adenrele High School, Ifo, Ogun State.
                     </Typography>
                 </Box>
                 
 
-                <Typography variant='h2' className={ `${classes.timeLineYear} ${classes.timeLineItem}`}>  2015
+                <Typography variant='h2' className={ `${classes.timeLineYear} ${classes.timeLineItem}`}>  2009
                 </Typography>
                 <Box component="div" className={classes.timeLineItem}>
                     <Typography variant='h5' align='center' className={classes.subHeading}>
-                      javascript full stack
+                      First School Leaving Certificate (FSLC)
                     </Typography>
                     <Typography variant='body1'  style={{color: 'tomato'}}>
-                       Compnay name where your Worked
+                      Frontline International Nur&Pry School, Ifo Ogun State.
                     </Typography>   
                     <Typography variant='subtitle1'  style={{color: 'tan'}}>
-                       Mollit elit nulla veniam minim cupidatat adipisicing reprehenderit aute non nulla. Incididunt laborum enim anim aliquip sunt nisi duis et nulla. In esse est enim dolore tempor qui deserunt quis esse. Incididunt adipisicing fugiat minim aliquip laborum ad. Fugiat fugiat aliqua proident cupidatat id laboris velit.
+                      First School Leaving Certificate, Frontline International Nursery and Primary School, Ifo, Ogun State
                     </Typography>
                 </Box>
                 
