@@ -1,22 +1,34 @@
 const express = require('express');
-const morgan = require('morgan');
-//const bodyParser = require('body-parser');
-const cookieParser = require('cookie-parser');
+// const morgan = require('morgan');
+// const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+const sendMail = require('./mail');
+const eMessage = require('./eMessage');
 
 const app = express();
 const PORT = process.env.PORT || 8080;
 
+app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.json());
 
+app.post('/', async(req, res)=>{
+    const { name, email, subject, message } = req.body;
+   try { 
+       if(!name && !email && !subject && !message)
+       return res.json('Incomplete data');
 
-app.use(morgan('tiny'));
-app.use(express.urlencoded({extented: true}));
-app.use(express.json());
-app.use(cookieParser());
-
-app.post('/contact', (req, res)=>{
-
-    console.log('Data:', req.body);
-    res.json({message: 'Message received!!!'})
+       await sendMail({
+           name,
+           email,
+           subject,
+           message: await eMessage(name, email, subject, message)
+       })
+       res.status(201).json({message:'Email sent!!!'})
+       
+   } catch (error) {
+        console.log(err);
+        res.status(500).json({message:'Email not sent'})   
+   }
 });
 
 

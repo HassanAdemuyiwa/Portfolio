@@ -1,21 +1,38 @@
-const mailer = require('nodemailer')
+const nodemailer = require('nodemailer');
+const mailGun = require('nodemailer-mailgun-transport')
 
-const getEmailData = (to, name, template) =>{
-    
+const auth = {
+    auth: {
+        api_key: 'c60d30144b0e794d8032cb413fbb2e1f-4b1aa784-04aa3fb7',
+        domain: 'sandbox218445b6b72f48a380ccd65b035d0a2a.mailgun.org'
+    }
 }
 
-const sendEmail =(to, name, type)=>{
+let transporter = nodemailer.createTransport(mailGun(auth));
 
-    const smtpTransport = mailer.createTransport({
-        service: 'Gmail',
-        auth: {
-            user:''
-        }
+
+const sendMail =(Option => {
+
+    const mailOptions = {
+        from: `${Option.name} <${Option.email}>`,
+        to: 'ademuyiwahassan68@gmail.com',
+        subject,
+        message
+    };
+    
+    
+    transporter.sendMail(mailOptions, (err, data)=>{
+            if(err) {
+               cb(err, null);
+            } else{
+                cb(null, data)
+            }
     })
 
-    const mail = getEmailData(to, name, type)
-
-
-
 
 }
+
+
+
+
+module.exports = sendMail;
