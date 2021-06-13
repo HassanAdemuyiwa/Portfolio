@@ -6,7 +6,6 @@ import Home from './components/index';
 import Resume from './components/Resume'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
-import Test from './components/Test'
 
 
 function App() {
