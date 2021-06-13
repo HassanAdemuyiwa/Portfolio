@@ -19,7 +19,6 @@ function App() {
           <Route  path='/resume' component={Resume}/>
           <Route  path='/portfolio' component={Portfolio}/>
           <Route  path='/contact' component={Contact}/>
-          <Route  path='/test' component={Test}/>
 
           </Switch>
     </BrowserRouter>
