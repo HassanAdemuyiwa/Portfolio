@@ -17,12 +17,12 @@ import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import { makeStyles } from '@material-ui/styles'
 import MobileSlider from '@material-ui/core/Drawer'
 import {
-ArrowBack,
 AssignmentInd,
 Home,
 Apps,
 ContactMail
 } from "@material-ui/icons"
+import MenuIcon from '@mui/icons-material/Menu';
 import Footer from './Footer'
 
 import avatar from '../asset/Avatar1.png'
@@ -137,7 +137,7 @@ const Navbar = () => {
             <AppBar position="fixed" style={{background: '#222'}}>
                 <Toolbar>
                     <IconButton onClick={toggleSlider('right', true)}> 
-                        <ArrowBack style={{color: 'tomato'}}/>
+                        <MenuIcon style={{color: 'tomato'}}/>
 
                     </IconButton>
                     <Typography variant="h5" style={{color: 'tan'}}>

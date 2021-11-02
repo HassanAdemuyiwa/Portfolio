@@ -120,7 +120,7 @@ const Resume = () => {
            <Box component='header' className={classes.mainContainer}>
                <Typography variant='h4' align='center' className={classes.heading}> EDUCATION</Typography>
               
-            <Box component='div' className={classes.timeLine}>
+                <Box component='div' className={classes.timeLine}>
                 <Typography variant='h2' className={ `${classes.timeLineYear} ${classes.timeLineItem}`}>  2020
                 </Typography>
                 <Box component="div" className={classes.timeLineItem}>
@@ -149,7 +149,7 @@ const Resume = () => {
                     </Typography>
                 </Box>
                 
-
+                
                 <Typography variant='h2' className={ `${classes.timeLineYear} ${classes.timeLineItem}`}>  2009
                 </Typography>
                 <Box component="div" className={classes.timeLineItem}>
@@ -157,75 +157,101 @@ const Resume = () => {
                       First School Leaving Certificate (FSLC)
                     </Typography>
                     <Typography variant='body1'  style={{color: 'tomato'}}>
-                      Frontline International Nur&Pry School, Ifo Ogun State.
+                      Frontline International Nur &amp; Pry School, Ifo Ogun State.
                     </Typography>   
                     <Typography variant='subtitle1'  style={{color: 'tan'}}>
                       First School Leaving Certificate, Frontline International Nursery and Primary School, Ifo, Ogun State
                     </Typography>
                 </Box>
-                
-                <Typography variant='h2' className={ `${classes.timeLineYear} ${classes.timeLineItem}`}>  2017
-                </Typography>
+                </Box>
+
+                <Typography variant='h4' align='center' className={classes.heading}> Skill</Typography>
+
+                <Box component='div' className={classes.timeLine}>
+
                 <Box component="div" className={classes.timeLineItem}>
                     <Typography variant='h5' align='center' className={classes.subHeading}>
-                       react | redux 
+                       Web Development
                     </Typography>
                     <Typography variant='body1'  style={{color: 'tomato'}}>
-                       Compnay name where your Worked
+                    Programming Laguages and Frameworks
                     </Typography>   
                     <Typography variant='subtitle1'  style={{color: 'tan'}}>
-                       Mollit elit nulla veniam minim cupidatat adipisicing reprehenderit aute non nulla. Incididunt laborum enim anim aliquip sunt nisi duis et nulla. In esse est enim dolore tempor qui deserunt quis esse. Incididunt adipisicing fugiat minim aliquip laborum ad. Fugiat fugiat aliqua proident cupidatat id laboris velit.
+                        Vanilla Javascript, Reactjs, Nodejs, SASS, Hmtl, CSS, Material-UI, Bootstrap
                     </Typography>
                 </Box>
                 
-
-                <Typography variant='h2' className={ `${classes.timeLineYear} ${classes.timeLineItem}`}>  2018-2020
-                </Typography>
                 <Box component="div" className={classes.timeLineItem}>
                     <Typography variant='h5' align='center' className={classes.subHeading}>
-                        mern stack
+                       VERSION CONTROL SYSTEM (VCS)
                     </Typography>
                     <Typography variant='body1'  style={{color: 'tomato'}}>
-                       Compnay name where your Worked
+                       Git
                     </Typography>   
                     <Typography variant='subtitle1'  style={{color: 'tan'}}>
-                       Mollit elit nulla veniam minim cupidatat adipisicing reprehenderit aute non nulla. Incididunt laborum enim anim aliquip sunt nisi duis et nulla. In esse est enim dolore tempor qui deserunt quis esse. Incididunt adipisicing fugiat minim aliquip laborum ad. Fugiat fugiat aliqua proident cupidatat id laboris velit.
+                       Git and Github
                     </Typography>
                 </Box>
                 
-
+                <Box component="div" className={classes.timeLineItem}>
+                    <Typography variant='h5' align='center' className={classes.subHeading}>
+                       Development Tools
+                    </Typography>
+                    <Typography variant='body1'  style={{color: 'tomato'}}>
+                       Technologies
+                    </Typography>   
+                    <Typography variant='subtitle1'  style={{color: 'tan'}}>
+                       Heroku, Netlify, MongoDB, Firebase.
+                    </Typography>
+                </Box>
             </Box>
 
 
 
-            <Typography variant='h4' align='center' className={classes.heading}> EDUCATION</Typography>
+            <Typography variant='h4' align='center' className={classes.heading}> Experience</Typography>
               
               <Box component='div' className={classes.timeLine}>
-                  <Typography variant='h2' className={ `${classes.timeLineYear} ${classes.timeLineItem}`}>  2013
-                  </Typography>
-                  <Box component="div" className={classes.timeLineItem}>
-                      <Typography variant='h5' align='center' className={classes.subHeading}>
-                          ssce
-                      </Typography>
-                      <Typography variant='body1'  style={{color: 'tomato'}}>
-                         name of Instition 
-                      </Typography>   
-                      <Typography variant='subtitle1'  style={{color: 'tan'}}>
-                         Mollit elit nulla veniam minim cupidatat adipisicing reprehenderit aute non nulla. Incididunt laborum enim anim aliquip sunt nisi duis et nulla. In esse est enim dolore tempor qui deserunt quis esse. Incididunt adipisicing fugiat minim aliquip laborum ad. Fugiat fugiat aliqua proident cupidatat id laboris velit.
-                      </Typography>
-                  </Box>
                   
-                  <Typography variant='h2' className={ `${classes.timeLineYear} ${classes.timeLineItem}`}>  2014
+                  
+                  <Typography variant='h2' className={ `${classes.timeLineYear} ${classes.timeLineItem}`}>  2021
                   </Typography>
                   <Box component="div" className={classes.timeLineItem}>
                       <Typography variant='h5' align='center' className={classes.subHeading}>
-                         National Diploma
+                         Front-End Mentor
                       </Typography>
                       <Typography variant='body1'  style={{color: 'tomato'}}>
-                         Name of Instition
+                        Code Clan Nigeria
                       </Typography>   
                       <Typography variant='subtitle1'  style={{color: 'tan'}}>
-                         Mollit elit nulla veniam minim cupidatat adipisicing reprehenderit aute non nulla. Incididunt laborum enim anim aliquip sunt nisi duis et nulla. In esse est enim dolore tempor qui deserunt quis esse. Incididunt adipisicing fugiat minim aliquip laborum ad. Fugiat fugiat aliqua proident cupidatat id laboris velit.
+                         Front-End Mentor at Code Clan Nigeria Community.
+                      </Typography>
+
+                  </Box>
+                  <Box component="div" className={classes.timeLineItem}>
+                      <Typography variant='h5' align='center' className={classes.subHeading}>
+                         Intern
+                      </Typography>
+                      <Typography variant='body1'  style={{color: 'tomato'}}>
+                        MBC Securities 
+                      </Typography>   
+                      <Typography variant='subtitle1'  style={{color: 'tan'}}>
+                         Intern at MBC Securities, St. Nicholas House, Obalende, Lagos.
+                      </Typography>
+
+                  </Box>
+
+
+                  <Typography variant='h2' className={ `${classes.timeLineYear} ${classes.timeLineItem}`}>  2018
+                  </Typography>
+                  <Box component="div" className={classes.timeLineItem}>
+                      <Typography variant='h5' align='center' className={classes.subHeading}>
+                          IT Support
+                      </Typography>
+                      <Typography variant='body1'  style={{color: 'tomato'}}>
+                         LGT Innovatives
+                      </Typography>   
+                      <Typography variant='subtitle1'  style={{color: 'tan'}}>
+                         IT Support at LGT Innovatives, Yaba, Lagos.
                       </Typography>
                   </Box>
                 

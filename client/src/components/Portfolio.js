@@ -44,7 +44,7 @@ import { EmailIcon,
 import project2 from '../asset/javascript-fullstack.jpg'
 import project3 from '../asset/react-redux.jpg'
 import project4 from '../asset/mern-stack.jpg'
-import tinder from '../asset/tinder.jpeg'
+import tinder from '../asset/javascript-fullstack.jpg'
 
 //Modal style
 function rand() {
