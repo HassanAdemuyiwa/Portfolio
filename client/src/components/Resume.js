@@ -118,97 +118,8 @@ const Resume = () => {
             <div className={classes.toolbarMargin}/>
            <Navbar/>
            <Box component='header' className={classes.mainContainer}>
-               <Typography variant='h4' align='center' className={classes.heading}> EDUCATION</Typography>
-              
-                <Box component='div' className={classes.timeLine}>
-                <Typography variant='h2' className={ `${classes.timeLineYear} ${classes.timeLineItem}`}>  2020
-                </Typography>
-                <Box component="div" className={classes.timeLineItem}>
-                    <Typography variant='h5' align='center' className={classes.subHeading}>
-                        National Diploma (ND)
-                    </Typography>
-                    <Typography variant='body1'  style={{color: 'tomato'}}>
-                       Yaba College of Technology, Yaba 
-                    </Typography>   
-                    <Typography variant='subtitle1'  style={{color: 'tan'}}>
-                      Ordinary National Diploma in Computer Science, Yaba College of Technology, Yaba, Lagos.
-                    </Typography>
-                </Box>
-                
-                <Typography variant='h2' className={ `${classes.timeLineYear} ${classes.timeLineItem}`}>  2014
-                </Typography>
-                <Box component="div" className={classes.timeLineItem}>
-                    <Typography variant='h5' align='center' className={classes.subHeading}>
-                        Senior Secondary School Certificate Examination (SSCE)
-                    </Typography>
-                    <Typography variant='body1'  style={{color: 'tomato'}}>
-                       Adenrele High School, Ifo
-                    </Typography>   
-                    <Typography variant='subtitle1'  style={{color: 'tan'}}>
-                       Senior Secondary School Certificate Exam (SSCE), Adenrele High School, Ifo, Ogun State.
-                    </Typography>
-                </Box>
-                
-                
-                <Typography variant='h2' className={ `${classes.timeLineYear} ${classes.timeLineItem}`}>  2009
-                </Typography>
-                <Box component="div" className={classes.timeLineItem}>
-                    <Typography variant='h5' align='center' className={classes.subHeading}>
-                      First School Leaving Certificate (FSLC)
-                    </Typography>
-                    <Typography variant='body1'  style={{color: 'tomato'}}>
-                      Frontline International Nur &amp; Pry School, Ifo Ogun State.
-                    </Typography>   
-                    <Typography variant='subtitle1'  style={{color: 'tan'}}>
-                      First School Leaving Certificate, Frontline International Nursery and Primary School, Ifo, Ogun State
-                    </Typography>
-                </Box>
-                </Box>
 
-                <Typography variant='h4' align='center' className={classes.heading}> Skill</Typography>
-
-                <Box component='div' className={classes.timeLine}>
-
-                <Box component="div" className={classes.timeLineItem}>
-                    <Typography variant='h5' align='center' className={classes.subHeading}>
-                       Web Development
-                    </Typography>
-                    <Typography variant='body1'  style={{color: 'tomato'}}>
-                    Programming Laguages and Frameworks
-                    </Typography>   
-                    <Typography variant='subtitle1'  style={{color: 'tan'}}>
-                        Vanilla Javascript, Reactjs, Nodejs, SASS, Hmtl, CSS, Material-UI, Bootstrap
-                    </Typography>
-                </Box>
-                
-                <Box component="div" className={classes.timeLineItem}>
-                    <Typography variant='h5' align='center' className={classes.subHeading}>
-                       VERSION CONTROL SYSTEM (VCS)
-                    </Typography>
-                    <Typography variant='body1'  style={{color: 'tomato'}}>
-                       Git
-                    </Typography>   
-                    <Typography variant='subtitle1'  style={{color: 'tan'}}>
-                       Git and Github
-                    </Typography>
-                </Box>
-                
-                <Box component="div" className={classes.timeLineItem}>
-                    <Typography variant='h5' align='center' className={classes.subHeading}>
-                       Development Tools
-                    </Typography>
-                    <Typography variant='body1'  style={{color: 'tomato'}}>
-                       Technologies
-                    </Typography>   
-                    <Typography variant='subtitle1'  style={{color: 'tan'}}>
-                       Heroku, Netlify, MongoDB, Firebase.
-                    </Typography>
-                </Box>
-            </Box>
-
-
-
-            <Typography variant='h4' align='center' className={classes.heading}> Experience</Typography>
+           <Typography variant='h4' align='center' className={classes.heading}> Experience</Typography>
               
               <Box component='div' className={classes.timeLine}>
                   
@@ -255,9 +166,100 @@ const Resume = () => {
                       </Typography>
                   </Box>
                 
-                  
-  
               </Box>
+
+              <Typography variant='h4' align='center' className={classes.heading}> Skill</Typography>
+
+                        <Box component='div' className={classes.timeLine}>
+
+                        <Box component="div" className={classes.timeLineItem}>
+                            <Typography variant='h5' align='center' className={classes.subHeading}>
+                            Web Development
+                            </Typography>
+                            <Typography variant='body1'  style={{color: 'tomato'}}>
+                            Programming Laguages and Frameworks
+                            </Typography>   
+                            <Typography variant='subtitle1'  style={{color: 'tan'}}>
+                                Vanilla Javascript, Reactjs, Nodejs, SASS, Hmtl, CSS, Material-UI, Bootstrap
+                            </Typography>
+                        </Box>
+
+                        <Box component="div" className={classes.timeLineItem}>
+                            <Typography variant='h5' align='center' className={classes.subHeading}>
+                            VERSION CONTROL SYSTEM (VCS)
+                            </Typography>
+                            <Typography variant='body1'  style={{color: 'tomato'}}>
+                            Git
+                            </Typography>   
+                            <Typography variant='subtitle1'  style={{color: 'tan'}}>
+                            Git and Github
+                            </Typography>
+                        </Box>
+
+                        <Box component="div" className={classes.timeLineItem}>
+                            <Typography variant='h5' align='center' className={classes.subHeading}>
+                            Development Tools
+                            </Typography>
+                            <Typography variant='body1'  style={{color: 'tomato'}}>
+                            Technologies
+                            </Typography>   
+                            <Typography variant='subtitle1'  style={{color: 'tan'}}>
+                            Heroku, Netlify, MongoDB, Firebase.
+                            </Typography>
+                        </Box>
+                        </Box>
+
+
+               <Typography variant='h4' align='center' className={classes.heading}> EDUCATION</Typography>
+              
+                <Box component='div' className={classes.timeLine}>
+                <Typography variant='h2' className={ `${classes.timeLineYear} ${classes.timeLineItem}`}>  2020
+                </Typography>
+                <Box component="div" className={classes.timeLineItem}>
+                    <Typography variant='h5' align='center' className={classes.subHeading}>
+                        National Diploma (ND)
+                    </Typography>
+                    <Typography variant='body1'  style={{color: 'tomato'}}>
+                       Yaba College of Technology, Yaba 
+                    </Typography>   
+                    <Typography variant='subtitle1'  style={{color: 'tan'}}>
+                      Ordinary National Diploma in Computer Science, Yaba College of Technology, Yaba, Lagos.
+                    </Typography>
+                </Box>
+                
+        
+
+
+                {/* <Typography variant='h2' className={ `${classes.timeLineYear} ${classes.timeLineItem}`}>  2014
+                </Typography>
+                <Box component="div" className={classes.timeLineItem}>
+                    <Typography variant='h5' align='center' className={classes.subHeading}>
+                        Senior Secondary School Certificate Examination (SSCE)
+                    </Typography>
+                    <Typography variant='body1'  style={{color: 'tomato'}}>
+                       Adenrele High School, Ifo
+                    </Typography>   
+                    <Typography variant='subtitle1'  style={{color: 'tan'}}>
+                       Senior Secondary School Certificate Exam (SSCE), Adenrele High School, Ifo, Ogun State.
+                    </Typography>
+                </Box>
+                
+                
+                <Typography variant='h2' className={ `${classes.timeLineYear} ${classes.timeLineItem}`}>  2009
+                </Typography>
+                <Box component="div" className={classes.timeLineItem}>
+                    <Typography variant='h5' align='center' className={classes.subHeading}>
+                      First School Leaving Certificate (FSLC)
+                    </Typography>
+                    <Typography variant='body1'  style={{color: 'tomato'}}>
+                      Frontline International Nur &amp; Pry School, Ifo Ogun State.
+                    </Typography>   
+                    <Typography variant='subtitle1'  style={{color: 'tan'}}>
+                      First School Leaving Certificate, Frontline International Nursery and Primary School, Ifo, Ogun State
+                    </Typography>
+                </Box> */}
+                </Box>
+
 
            </Box>
 
