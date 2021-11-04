@@ -40,11 +40,11 @@ import { EmailIcon,
 
 
 
-// import project1 from '../asset/html-css-javascript-lg.jpg'
+import project1 from '../asset/rest-api.jpg'
 import project2 from '../asset/javascript-fullstack.jpg'
 import project3 from '../asset/react-redux.jpg'
 import project4 from '../asset/mern-stack.jpg'
-import tinder from '../asset/javascript-fullstack.jpg'
+// import project1 from '../asset/rest-api.jpg'
 
 //Modal style
 function rand() {
@@ -152,14 +152,14 @@ const Portfolio = () => {
             <Box component='div' className={classes.mainContainer}>
               <Navbar />   
               <Grid container justify='center'>
-                  {/* Tinder clone */}
+                  {/* Project 1 */}
                   <Grid item xs={12} sm={8} md={6}>
                   <Card className={classes.cardContainer}>
                       <CardActionArea>
-                          <CardMedia component="img" alt="Project 1" height='140' image={tinder}/>
+                          <CardMedia component="img" alt="Project 1" height='140' image={project1}/>
                          <CardContent>
                              <Typography gutterBottom variant='h5'>
-                                 Tinder Clone
+                                Natour API
                              </Typography>
                              <Typography variant='body2' color='textSecondary' component='p'>
                                  Do ullamco sunt ullamco officia dolore ullamco non esse et. Dolor tempor non enim nisi consectetur anim. Qui ut ea pariatur qui commodo ea nulla ea adipisicing reprehenderit. Nisi in enim consequat dolor consequat laboris aliquip tempor sint reprehenderit elit cillum non. Elit duis aute fugiat ipsum nostrud nulla eiusmod adipisicing labore.
@@ -170,7 +170,7 @@ const Portfolio = () => {
                              <Button size='small' color='primary' onClick={handleOpen}>
                                  Share
                              </Button>
-                              <Button size='small' color='primary' href="https://tinder-clone-169b6.firebaseapp.com/" target_blank>
+                              <Button size='small' color='primary' href="https://sheltered-woodland-42448.herokuapp.com/api/v1/tours" target_blank>
                                  Live Demo
                              </Button>
                          </CardActions>
@@ -192,7 +192,7 @@ const Portfolio = () => {
                           <CardMedia component="img" alt="Project 2" height='140' image={project2}/>
                          <CardContent>
                              <Typography gutterBottom variant='h5'>
-                                 Project 2
+                                 TINDER CLONE
                              </Typography>
                              <Typography variant='body2' color='textSecondary' component='p'>
                                  Do ullamco sunt ullamco officia dolore ullamco non esse et. Dolor tempor non enim nisi consectetur anim. Qui ut ea pariatur qui commodo ea nulla ea adipisicing reprehenderit. Nisi in enim consequat dolor consequat laboris aliquip tempor sint reprehenderit elit cillum non. Elit duis aute fugiat ipsum nostrud nulla eiusmod adipisicing labore.
@@ -202,7 +202,7 @@ const Portfolio = () => {
                              <Button size='small' color='primary'>
                                  Share
                              </Button>
-                              <Button size='small' color='primary'>
+                              <Button size='small' color='primary' href="https://tinder-clone-169b6.firebaseapp.com/">
                                  Live Demo
                              </Button>
                          </CardActions>
