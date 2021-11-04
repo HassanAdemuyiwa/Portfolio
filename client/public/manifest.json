@@ -1,13 +1,13 @@
 {
     "icons": [
         {
-            "src": "./favicon_192",
-            "type": "image/png",
+            "src": "./favicon_192.jpeg",
+            "type": "image/jpeg",
             "sizes": "192x192"
         },
         {
-            "src": "./favicon_512",
-            "type": "image/png",
+            "src": "./favicon_512.jpeg",
+            "type": "image/jpeg",
             "sizes": "5122x512"
 
         }
