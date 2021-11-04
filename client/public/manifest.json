@@ -4,6 +4,11 @@
             "src": "./favicon_192",
             "type": "image/png",
             "sizes": "192x192"
+        },
+        {
+            "src": "./favicon_512",
+            "type": "image/png",
+            "sizes": "5122x512"
 
         }
     ]
