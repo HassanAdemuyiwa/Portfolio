@@ -179,8 +179,8 @@ const Portfolio = () => {
                     color="textSecondary"
                     component="p"
                   >
-                    Random Quotes Generator and twitte effect with Vanila
-                    Javascript
+                    Awesome Random Quotes Generator and twitte effect with
+                    Vanila Javascript
                   </Typography>
                 </CardContent>
               </CardActionArea>
