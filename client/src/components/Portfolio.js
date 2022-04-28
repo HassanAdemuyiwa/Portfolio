@@ -179,7 +179,7 @@ const Portfolio = () => {
                     color="textSecondary"
                     component="p"
                   >
-                    Awesome Random Quotes Generator and twitte effect with
+                    Awesome Random Quotes Generator and twitter effect with
                     Vanila Javascript
                   </Typography>
                 </CardContent>
