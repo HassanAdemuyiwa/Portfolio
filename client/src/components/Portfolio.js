@@ -45,6 +45,7 @@ import project1 from "../asset/rest-api.jpg";
 import project2 from "../asset/javascript-fullstack.jpg";
 import project3 from "../asset/react-redux.jpg";
 import project4 from "../asset/mern-stack.jpg";
+import infinityScroll from "../asset/infinite-scroll.jpg";
 // import project1 from '../asset/rest-api.jpg'
 
 //Modal style
@@ -179,8 +180,8 @@ const Portfolio = () => {
                     color="textSecondary"
                     component="p"
                   >
-                    Awesome Random Quotes Generator and twitter effect with
-                    Vanila Javascript
+                    Awesome Random Quotes Generator from JSON API and Tweet to
+                    twitter ... Built with Vanila Javascript
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -192,6 +193,54 @@ const Portfolio = () => {
                   size="small"
                   color="primary"
                   href="https://hassanademuyiwa.github.io/quote-gnerator/"
+                  target_blank
+                >
+                  Live Demo
+                </Button>
+              </CardActions>
+              <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="simple-modal-title"
+                aria-describedby="simple-modal-description"
+              >
+                {body}
+              </Modal>
+            </Card>
+          </Grid>
+
+          {/* Infinity Scroll */}
+          <Grid item xs={12} sm={8} md={4}>
+            <Card className={classes.cardContainer}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  alt="Quote Gen"
+                  height="140"
+                  image={infinityScroll}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5">
+                    Infinite Scroll
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    Infinite Scroll of pictures generated from Unsplash API with
+                    loading effect ... Built with Vanila Javascript
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button size="small" color="primary" onClick={handleOpen}>
+                  Share
+                </Button>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://hassanademuyiwa.github.io/infinity-scroll/"
                   target_blank
                 >
                   Live Demo
