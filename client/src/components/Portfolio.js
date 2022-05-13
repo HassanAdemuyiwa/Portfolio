@@ -46,6 +46,7 @@ import project2 from "../asset/javascript-fullstack.jpg";
 import project3 from "../asset/react-redux.jpg";
 import project4 from "../asset/mern-stack.jpg";
 import infinityScroll from "../asset/infinite-scroll.jpg";
+import pinp from "../asset/picture-in-picture.jpeg";
 // import project1 from '../asset/rest-api.jpg'
 
 //Modal style
@@ -241,6 +242,53 @@ const Portfolio = () => {
                   size="small"
                   color="primary"
                   href="https://hassanademuyiwa.github.io/infinity-scroll/"
+                  target_blank
+                >
+                  Live Demo
+                </Button>
+              </CardActions>
+              <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="simple-modal-title"
+                aria-describedby="simple-modal-description"
+              >
+                {body}
+              </Modal>
+            </Card>
+          </Grid>
+
+          {/* Picture-in-Picture */}
+          <Grid item xs={12} sm={8} md={4}>
+            <Card className={classes.cardContainer}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  alt="Quote Gen"
+                  height="140"
+                  image={pinp}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5">
+                    Picture in Picture
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    Picture in Picture effect ... Built with Vanila Javascript
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button size="small" color="primary" onClick={handleOpen}>
+                  Share
+                </Button>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://hassanademuyiwa.github.io/picture-in-picture/"
                   target_blank
                 >
                   Live Demo
