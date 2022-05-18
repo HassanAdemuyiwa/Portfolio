@@ -47,6 +47,7 @@ import project3 from "../asset/react-redux.jpg";
 import project4 from "../asset/mern-stack.jpg";
 import infinityScroll from "../asset/infinite-scroll.jpg";
 import pinp from "../asset/picture-in-picture.jpeg";
+import darkMode from "../asset/dark_mode.png";
 // import project1 from '../asset/rest-api.jpg'
 
 //Modal style
@@ -194,7 +195,7 @@ const Portfolio = () => {
                   size="small"
                   color="primary"
                   href="https://hassanademuyiwa.github.io/quote-gnerator/"
-                  target_blank
+                  target="_blank"
                 >
                   Live Demo
                 </Button>
@@ -242,7 +243,7 @@ const Portfolio = () => {
                   size="small"
                   color="primary"
                   href="https://hassanademuyiwa.github.io/infinity-scroll/"
-                  target_blank
+                  target="_blank"
                 >
                   Live Demo
                 </Button>
@@ -289,7 +290,55 @@ const Portfolio = () => {
                   size="small"
                   color="primary"
                   href="https://hassanademuyiwa.github.io/picture-in-picture/"
-                  target_blank
+                  target="_blank"
+                >
+                  Live Demo
+                </Button>
+              </CardActions>
+              <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="simple-modal-title"
+                aria-describedby="simple-modal-description"
+              >
+                {body}
+              </Modal>
+            </Card>
+          </Grid>
+
+          {/* Dark Mode */}
+          <Grid item xs={12} sm={8} md={4}>
+            <Card className={classes.cardContainer}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  alt="Quote Gen"
+                  height="140"
+                  image={darkMode}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5">
+                    Dark Light Mode
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    Dark and Light Mode Switching... Built with Vanila
+                    Javascript
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button size="small" color="primary" onClick={handleOpen}>
+                  Share
+                </Button>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://hassanademuyiwa.github.io/light_dark_mode/"
+                  target="_blank"
                 >
                   Live Demo
                 </Button>
@@ -341,7 +390,7 @@ const Portfolio = () => {
                   size="small"
                   color="primary"
                   href="https://sheltered-woodland-42448.herokuapp.com/api/v1/tours"
-                  target_blank
+                  target="_blank"
                 >
                   Live Demo
                 </Button>
@@ -392,6 +441,7 @@ const Portfolio = () => {
                     size="small"
                     color="primary"
                     href="https://tinder-clone-169b6.firebaseapp.com/"
+                    target="_blank"
                   >
                     Live Demo
                   </Button>
@@ -432,7 +482,7 @@ const Portfolio = () => {
                 <Button size="small" color="primary">
                   Share
                 </Button>
-                <Button size="small" color="primary">
+                <Button size="small" color="primary" target="_blank">
                   Live Demo
                 </Button>
               </CardActions>
@@ -471,7 +521,7 @@ const Portfolio = () => {
                 <Button size="small" color="primary">
                   Share
                 </Button>
-                <Button size="small" color="primary">
+                <Button size="small" color="primary" target="_blank">
                   Live Demo
                 </Button>
               </CardActions>
