@@ -48,7 +48,6 @@ import project4 from "../asset/mern-stack.jpg";
 import infinityScroll from "../asset/infinite-scroll.jpg";
 import pinp from "../asset/picture-in-picture.jpeg";
 import darkMode from "../asset/dark_mode.png";
-// import project1 from '../asset/rest-api.jpg'
 
 //Modal style
 function rand() {
