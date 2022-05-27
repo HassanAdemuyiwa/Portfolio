@@ -41,7 +41,7 @@ import {
 } from "react-share";
 
 import quoteGen from "../asset/quote.png";
-import project1 from "../asset/rest-api.jpg";
+import project1 from "../asset/hide-show-password.png";
 import project2 from "../asset/javascript-fullstack.jpg";
 import project3 from "../asset/react-redux.jpg";
 import project4 from "../asset/mern-stack.jpg";
@@ -366,19 +366,14 @@ const Portfolio = () => {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5">
-                    Natour API
+                    Show/Hide Password
                   </Typography>
                   <Typography
                     variant="body2"
                     color="textSecondary"
                     component="p"
                   >
-                    Do ullamco sunt ullamco officia dolore ullamco non esse et.
-                    Dolor tempor non enim nisi consectetur anim. Qui ut ea
-                    pariatur qui commodo ea nulla ea adipisicing reprehenderit.
-                    Nisi in enim consequat dolor consequat laboris aliquip
-                    tempor sint reprehenderit elit cillum non. Elit duis aute
-                    fugiat ipsum nostrud nulla eiusmod adipisicing labore.
+                    Hide and Show Password with emoji... build with VueJs
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -389,7 +384,7 @@ const Portfolio = () => {
                 <Button
                   size="small"
                   color="primary"
-                  href="https://sheltered-woodland-42448.herokuapp.com/api/v1/tours"
+                  href="https://vue-show-hide-password.netlify.app/"
                   target="_blank"
                 >
                   Live Demo
