@@ -48,6 +48,7 @@ import project4 from "../asset/mern-stack.jpg";
 import infinityScroll from "../asset/infinite-scroll.jpg";
 import pinp from "../asset/picture-in-picture.jpeg";
 import darkMode from "../asset/dark_mode.png";
+import earngage from "../asset/earngage.svg";
 
 //Modal style
 function rand() {
@@ -163,7 +164,7 @@ const Portfolio = () => {
         <Navbar />
         <Grid container justify="center">
           {/* Quote Gen */}
-          <Grid item xs={12} sm={8} md={4}>
+          <Grid item xs={12} md={6} lg={4}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardMedia
@@ -209,9 +210,55 @@ const Portfolio = () => {
               </Modal>
             </Card>
           </Grid>
+          {/* earngage */}
+          <Grid item xs={12} md={6} lg={4}>
+            <Card className={classes.cardContainer}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  alt="Quote Gen"
+                  height="140"
+                  image={earngage}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5">
+                    EARNGAGE
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    A Recruitment and HR solution website ... Built with VueJs
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button size="small" color="primary" onClick={handleOpen}>
+                  Share
+                </Button>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://earngage-test-page.netlify.app/"
+                  target="_blank"
+                >
+                  Live Demo
+                </Button>
+              </CardActions>
+              <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="simple-modal-title"
+                aria-describedby="simple-modal-description"
+              >
+                {body}
+              </Modal>
+            </Card>
+          </Grid>
 
           {/* Infinity Scroll */}
-          <Grid item xs={12} sm={8} md={4}>
+          <Grid item xs={12} md={6} lg={4}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardMedia
@@ -259,7 +306,7 @@ const Portfolio = () => {
           </Grid>
 
           {/* Picture-in-Picture */}
-          <Grid item xs={12} sm={8} md={4}>
+          <Grid item xs={12} md={6} lg={4}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardMedia
@@ -306,7 +353,7 @@ const Portfolio = () => {
           </Grid>
 
           {/* Dark Mode */}
-          <Grid item xs={12} sm={8} md={4}>
+          <Grid item xs={12} md={6} lg={4}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardMedia
@@ -354,7 +401,7 @@ const Portfolio = () => {
           </Grid>
 
           {/* Project 1 */}
-          <Grid item xs={12} sm={8} md={4}>
+          <Grid item xs={12} md={6} lg={4}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardMedia
@@ -401,7 +448,7 @@ const Portfolio = () => {
           </Grid>
 
           {/* Project2 */}
-          <Grid item xs={12} sm={8} md={4}>
+          <Grid item xs={12} md={6} lg={4}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardMedia
@@ -445,7 +492,7 @@ const Portfolio = () => {
           </Grid>
 
           {/* Project3 */}
-          <Grid item xs={12} sm={8} md={4}>
+          <Grid item xs={12} md={6} lg={4}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardMedia
@@ -484,7 +531,7 @@ const Portfolio = () => {
           </Grid>
 
           {/* Project4 */}
-          <Grid item xs={12} sm={8} md={4}>
+          <Grid item xs={12} md={6} lg={4}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardMedia
